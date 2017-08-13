@@ -1,5 +1,6 @@
 // <!-- Bryan Becker
 // Week 3 Homework for U of A Bootcamp -->
+//Broken version at this point
 
 // Arrays holding hangman words to be guessed
 var cities = ["phoenix", "tucson", "sedona", "yuma", "tombstone", "prescott","payson","kingman", "strawberry", "flagstaff", "snowflake", "quartzsite"];

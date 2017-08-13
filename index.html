@@ -11,50 +11,72 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Finger+Paint|Sancreek|Stalinist+One" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   </head>
   <body>
-    <!-- Image and text -->
-    <nav class="navbar navbar-light bg-faded">
-      <a class="navbar-brand mx-auto" href="#">
-        <img id="icon" src="assets/img/noose.png" width="40" height="40" class="d-inline-block align-top" alt="">
-        <h1 id="hangman">Hangman</h1>
-      </a>
-    </nav>
+    <div class="background">
+    <div class="container">
 
+        <nav class="navbar navbar-light bg-faded">
+            <a class="navbar-brand mx-auto" href="#">
+            <h1 id="hangman">Hangman</h1>
+            </a>
+        </nav>
 
-   
-    <div class="container mt-4">
-        <div class="row custom">
-            <div class="col">
-                <h1 id="test"></h1>
-            </div>
+        <div class="card" style="width: 40rem;">
+          <h3 class="card-header">Press any key to get started!</h3>
+          <div class="card-body">
+            <h5 class="text-center">Hint: Cities in Arizona </h5>
+          </div>
         </div>
-    </div>
-
-    <div class="container mt-2">
-        <div class="row justify-content-center">
-            <button type="button" onclick="game()" class="btn btn-secondary">Press here to Play</button>
+        
+       <div class="card mt-4" style="width: 40rem;">
+          <h2 class="card-header">Word to Guess</h2>
+          <div class="card-body">
+            <h1 id="wordToGuess"></h1>
+          </div>
         </div>
+
+        <div class="card mt-4" style="width: 40rem;">
+          <div class="card-body">
+            Wrong Guesses: <span id="wrongGuess"></span>
+          </div>
+        </div>
+
+        <div class="card mt-2" style="width: 40rem;">
+          <div class="card-body">
+            Guesses Left: <span id="numberGuess"></span>
+          </div>
+        </div>
+
+        <div class="card font mt-4" style="width: 40rem;">
+          <div class="card-body">
+            Wins: <span id="wins"></span>
+          </div>
+        </div>
+
+        <div class="card font mt-2" style="width: 40rem;">
+          <div class="card-body">
+            Losses: <span id="losses"></span>
+          </div>
+        </div>
+
+                
+
     </div>
-
-
-
-
-
-
-
-
-
+    </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
     <!-- link to custom JS file -->
-    <script type="text/javascript" src="assets/javascript/easy.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
 
   </body>
 </html>
